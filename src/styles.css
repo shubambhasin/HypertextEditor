@@ -1,4 +1,50 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+}
+
+.is-active {
+  background-color: rgb(228, 0, 171);
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid rgb(235, 235, 235);
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  margin: 0rem 0.3rem;
+  cursor: pointer;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* justify-content: center; */
+}
+.btn-array {
+  display: flex;
+}
+.ProseMirror {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgb(238, 238, 238);
+  outline: none;
+  color: rgb(65, 65, 65);
+  font-size: 1.3rem;
+  width: 100%;
+  margin: 0.4rem;
+}
+.modal {
+  padding: 1rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  background: rgb(199, 199, 199);
+  z-index: 10;
+  border-radius: 5px;
+}
+.close {
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.w-100 {
+  width: 100%;
 }
