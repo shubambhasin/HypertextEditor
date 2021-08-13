@@ -31,11 +31,23 @@ button {
   font-size: 1.3rem;
   width: 100%;
   margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: "Start writing...";
+  float: left;
+  color: #ced4da;
+  pointer-events: none;
+  height: 0;
+}
+.f-center {
+  text-align: center;
 }
 .modal {
   padding: 1rem;
   position: absolute;
-  top: 0.2rem;
+  top: 0;
   left: 0.2rem;
   background: rgb(199, 199, 199);
   z-index: 10;

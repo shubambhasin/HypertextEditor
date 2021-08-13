@@ -3,9 +3,11 @@ import { BsFillImageFill } from "react-icons/bs";
 import { TextOperation } from "./TextOperations";
 import "../../styles.css";
 import { AddLinkBox } from "../utils/AddLinkBox";
+import { AddImageLink } from "./Image/AddImageLink";
 
 export const MenuBar = ({ editor }) => {
   const [modal, setModal] = useState(false);
+  const [imageModal, setImageModal] = useState(false);
 
   if (!editor) {
     return null;
@@ -14,13 +16,31 @@ export const MenuBar = ({ editor }) => {
   return (
     <div className="btn-array">
       <TextOperation editor={editor} />
-      <button>
-        <BsFillImageFill size={28} />
-      </button>
-      <div className="relative">
-        <button title="add a link" onClick={() => setModal(true)}>
-          Link
+      <div className="relative" onMouseLeave={() => setImageModal(false)}>
+        <button onClick={() => setImageModal(true)}>
+          <BsFillImageFill size={28} />
         </button>
+        {imageModal && (
+          <AddImageLink
+            editor={editor}
+            modal={imageModal}
+            setModal={setImageModal}
+          />
+        )}
+      </div>
+      <div className="relative" onMouseLeave={() => setModal(false)}>
+        {editor.isActive("link") ? (
+          <button
+            title="add a link"
+            onClick={() => editor.chain().focus().unsetLink().run()}
+          >
+            unSetLink
+          </button>
+        ) : (
+          <button title="add a link" onClick={() => setModal(true)}>
+            Link
+          </button>
+        )}
         {modal && (
           <AddLinkBox editor={editor} modal={modal} setModal={setModal} />
         )}
