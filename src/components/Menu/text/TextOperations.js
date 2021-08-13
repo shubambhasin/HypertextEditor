@@ -2,7 +2,7 @@ import React from "react";
 import { BsTypeBold, BsTypeUnderline, BsTypeItalic } from "react-icons/bs";
 export const TextOperation = ({ editor }) => {
   return (
-    <div>
+    <div className="flex">
       <button
         title="bold"
         onClick={() => editor.chain().focus().toggleBold().run()}

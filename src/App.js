@@ -4,7 +4,13 @@ import "./styles.css";
 export default function App() {
   return (
     <div className="App">
-      <h1 className="h3 t-center">HyperText Editor</h1>
+      <h1 className="h1 t-center">
+        HyperText Editor{" "}
+        <span role="img" aria-label="rocket">
+          🚀
+        </span>
+      </h1>
+      <hr />
       <TextEditor />
     </div>
   );
