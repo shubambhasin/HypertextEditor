@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { BsFillImageFill, BsLink45Deg } from "react-icons/bs";
+import { BsLink45Deg } from "react-icons/bs";
 import { BiUnlink } from "react-icons/bi";
 import "../../styles.css";
 import { AddImageLink } from "./Image/AddImageLink";
+import { RiImageAddFill } from "react-icons/ri";
 import { AddMeme } from "./meme/AddMeme";
 import { AddLinkBox } from "./link/AddLinkBox";
 import { TextOperation } from "./text/TextOperations";
@@ -21,7 +22,7 @@ export const MenuBar = ({ editor }) => {
       <div className="flex">
         <div className="relative" onMouseLeave={() => setImageModal(false)}>
           <button onClick={() => setImageModal(true)}>
-            <BsFillImageFill size={28} />
+            <RiImageAddFill size={28} />
           </button>
           {imageModal && (
             <AddImageLink

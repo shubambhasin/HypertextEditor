@@ -20,17 +20,17 @@ export const AddImageLink = ({ editor, setModal }) => {
   return (
     <div className="relative bg-grey">
       <div className="modal">
-        <span
+        <button
           onClick={() => setModal(false)}
           className="absolute close pointer"
         >
           x
-        </span>
+        </button>
         <form
           onSubmit={(e) => handleSubmit(e, input)}
           className="flex flex-col gap-1 jcc aic"
         >
-          <label className="smaller">
+          <label className="f-white smaller">
             <small>Add Image URL</small>
           </label>
           <input onChange={(e) => handleChange(e)} />

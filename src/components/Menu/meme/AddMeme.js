@@ -1,6 +1,7 @@
 import React from "react";
 import { getMeme } from "../../utils/getMeme";
 
+// meme component
 export const AddMeme = ({ editor }) => {
   const addMeme = async () => {
     let memeUrl = "";
@@ -19,7 +20,6 @@ export const AddMeme = ({ editor }) => {
       editor.commands.setContent(stableAllContent);
     }
   };
-
   return (
     <div>
       <button className="btn btn-outline" onClick={addMeme}>
