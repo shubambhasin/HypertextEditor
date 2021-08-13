@@ -63,6 +63,12 @@ export const HowToModal = ({ modal }) => {
             to add image using a link
           </li>
           <li>to delete an image click on image, press delete/backspace</li>
+          <li>
+            <strong>Note</strong>: Add link and add image via URL modals
+            supports closing of modals on mouseOut to save you an extra click.
+            That means as soon as the mouse move out of the modal, modal will be
+            closed. So keep that in mind.
+          </li>
         </ul>
       </div>
     </div>
