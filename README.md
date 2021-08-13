@@ -1,8 +1,8 @@
 # HyperTextEditor 🚀
 #### Text editor with features like adding **links** to the text, adding **memes** using text, add **image** using url, bold text, italic text, underline text. Built using headless editor framework for web, Tiptap 2.0
 
-TipTap 2.0: https://www.tiptap.dev/api/introduction
-Used Giphy for fetching meme: https://developers.giphy.com/docs/api/
+- TipTap 2.0: https://www.tiptap.dev/api/introduction
+- Used Giphy for fetching meme: https://developers.giphy.com/docs/api/
 
 Live at: https://hypertexteditor.netlify.app/
 
