@@ -4,6 +4,7 @@ import { TextOperation } from "./TextOperations";
 import "../../styles.css";
 import { AddLinkBox } from "../utils/AddLinkBox";
 import { AddImageLink } from "./Image/AddImageLink";
+import { AddMeme } from "./AddMeme";
 
 export const MenuBar = ({ editor }) => {
   const [modal, setModal] = useState(false);
@@ -37,7 +38,11 @@ export const MenuBar = ({ editor }) => {
             unSetLink
           </button>
         ) : (
-          <button title="add a link" onClick={() => setModal(true)}>
+          <button
+            title="add a link"
+            className="btn btn-outline"
+            onClick={() => setModal(true)}
+          >
             Link
           </button>
         )}
@@ -45,6 +50,7 @@ export const MenuBar = ({ editor }) => {
           <AddLinkBox editor={editor} modal={modal} setModal={setModal} />
         )}
       </div>
+      <AddMeme editor={editor} />
     </div>
   );
 };

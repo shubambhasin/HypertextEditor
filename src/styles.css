@@ -3,7 +3,7 @@
 }
 
 .is-active {
-  background-color: rgb(228, 0, 171);
+  background: rgba(255, 0, 162, 1);
   color: white;
 }
 
@@ -22,6 +22,8 @@ button {
 }
 .btn-array {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ProseMirror {
   padding: 0.2rem 0.5rem;
@@ -41,7 +43,7 @@ button {
   pointer-events: none;
   height: 0;
 }
-.f-center {
+.t-center {
   text-align: center;
 }
 .modal {
@@ -49,7 +51,7 @@ button {
   position: absolute;
   top: 0;
   left: 0.2rem;
-  background: rgb(199, 199, 199);
+  background: rgba(255, 0, 162, 1);
   z-index: 10;
   border-radius: 5px;
 }
