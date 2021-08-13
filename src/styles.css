@@ -1,6 +1,7 @@
 @import "https://ease-css.netlify.app/ease/css/ease.css";
 .App {
   font-family: sans-serif;
+  margin: 0 auto;
 }
 .f-white {
   color: white;
@@ -41,8 +42,8 @@ button {
   outline: none;
   color: rgb(65, 65, 65);
   font-size: 1.3rem;
-  width: 100%;
-  margin: 0.4rem;
+  width: 95%;
+  margin: 0.4rem auto;
   overflow: auto;
   height: 400px;
 }
@@ -111,8 +112,11 @@ button:hover {
   position: relative;
   background: white;
   max-width: 700px;
+  min-height: max-content;
 }
-
+ul {
+  padding-inline-start: 5px;
+}
 li {
   margin: 1rem;
   padding: 0.5rem;
@@ -146,14 +150,31 @@ li button {
   transition: 0.2s all;
   border-radius: 5px;
   padding: 0.5rem;
-  margin-left: auto;
 }
 .how-to-use:hover {
   border: 1px solid rgb(196, 196, 196);
 }
+.p1rem {
+  padding: 0.2rem 0.5rem;
+}
+
 /* /////////////////////////////// */
 @media screen and (max-width: 500px) {
   .btn-array {
     flex-direction: column;
+  }
+  .h2 {
+    font-size: 1.3rem;
+  }
+  .h3 {
+    font-size: 1rem;
+  }
+  .howto-modal {
+    margin: 5rem 2rem;
+    max-width: 500px;
+  }
+  li {
+    margin: 0.7rem;
+    padding: 0.2rem;
   }
 }

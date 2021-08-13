@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 
 export const getMeme = async (keyword) => {
+  // check if keyword is present or not
   if (keyword.length !== 0) {
     let memeUrl = "";
     try {
