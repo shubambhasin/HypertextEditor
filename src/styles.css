@@ -2,6 +2,7 @@
 .App {
   font-family: sans-serif;
   margin: 0 auto;
+  max-width: 1500px;
 }
 .f-white {
   color: white;
@@ -160,6 +161,9 @@ li button {
 
 /* /////////////////////////////// */
 @media screen and (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
   .btn-array {
     flex-direction: column;
   }

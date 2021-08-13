@@ -1,11 +1,10 @@
 import axios from "axios";
-import React from "react";
 
 export const getMeme = async (keyword) => {
   // check if keyword is present or not
   if (keyword.length !== 0) {
-    let memeUrl = "";
     try {
+      // codesandbox was having issues with .env file so thats why key is not hidden
       const response = await axios.get(
         `https://api.giphy.com/v1/gifs/search?api_key=k63sMfP5nNS9CcNQCVCWGip59G0Jidhn&q=${keyword}&limit=10&offset=0&rating=g&lang=en`
       );

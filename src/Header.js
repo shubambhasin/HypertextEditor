@@ -9,7 +9,7 @@ export const Header = ({ modal }) => {
           🚀
         </span>
       </h1>
-      {/* // toggles the how to use modal  */}
+      {/* // toggles the how to use modal on homepage  */}
       <span class="how-to-use pointer" onClick={() => modal((value) => !value)}>
         How to use ?
       </span>
